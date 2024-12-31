@@ -1,27 +1,21 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+  position: static;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fjalla One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -35,8 +29,302 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.main {
+  display: none;
+  transform: translateY(10px);
+  opacity: 0;
+  margin-left: auto;
+}
+
+/* ENTRY BANNER */
+.entry-banner p {
+  margin-left: 1.3em;
+  width: max-content;
+}
+
+/* HEADER */
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 2rem 0 2rem 0;
+  align-items: center;
+  overflow: hidden;
+  /* border: 1px white solid; */
+}
+
+.menu-item p {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+.dash_line {
+  width: 100%;
+  height: 3px;
+  object-fit: cover;
+  filter: hue-rotate(50deg) saturate(0%) brightness(100%);
+}
+
+.logo-link {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.menu-logo {
+  object-fit: cover;
+  height: auto;
+  filter: invert(0.9);
+}
+
+.menu-item p:hover {
+  color: rgb(232, 232, 232);
+}
+
+.social-media-link {
+  margin-left: 0.6rem;
+}
+
+.social-media-link:hover {
+  transition: 0.3s ease;
+  scale: 1.3;
+}
+#tiktok-icon {
+  object-fit: cover;
+  height: auto;
+  width: 20px;
+  filter: invert(1);
+}
+
+/* BODY CONTAINER */
+.body-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+.body-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ENTRY BODY*/
+.entry-body {
+  /* background: rgb(118, 255, 118); */
+}
+
+.video-container img {
+  object-fit: cover;
+  width: 5rem;
+  height: auto;
+  filter: invert(1);
+  transform: rotate(45deg);
+}
+
+.video-container p {
+  font-family: "Mali", serif;
+  color: white;
+}
+
+.tiktok-clip {
+  object-fit: cover;
+  width: fit-content;
+  height: 80vh;
+  margin: auto;
+}
+
+.entry-body-title {
+  width: 100%;
+  height: 100vh;
+}
+
+.entry-body-title h1 {
+  margin-bottom: 3rem;
+  background-color: yellow;
+  text-align: center;
+}
+
+.entry-body-title p {
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: "Mali", serif;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  scroll-snap-align: end;
+}
+
+.testimonial-image-container {
+  height: 40vh;
+  overflow: hidden;
+}
+
+.testimonial-image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+}
+
+.testimonial-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  background-color: white;
+}
+
+.testimonial-text p {
+  font-family: "Mali", serif;
+  text-align: center;
+  align-content: center;
+}
+
+.testimonial-text img {
+  object-fit: cover;
+  width: 60px;
+  height: auto;
+}
+
+/* TEACHER */
+.teacher {
+  color: white;
+  scroll-snap-align: end;
+}
+
+.teacher h1 {
+  color: white;
+  text-align: center;
+}
+
+.teacher img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+
+.teacher h2 {
+  font-size: 2rem;
+  align-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.teacher h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  padding: 0.6rem 0 0.6rem 0;
+  display: flex;
+}
+
+.teacher p {
+  margin-left: 1rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 758px) {
+  .teacher p {
+    font-size: 1rem;
   }
+  .teacher img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* PRODUCTS PAGE */
+.products {
+  margin-bottom: 1rem;
+  scroll-snap-align: end;
+}
+
+.products h1 {
+  text-align: center;
+  padding: 4rem;
+  font-weight: 100;
+}
+
+.product-pics {
+  object-fit: cover;
+  height: 60vh;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@media screen and (max-width: 758px) {
+  .products h1 {
+    padding: 2rem 0 2rem 0;
+    font-size: 1.2rem;
+  }
+  .product-pics {
+    height: 40vh;
+  }
+}
+
+/* ABOUT US */
+.about-us {
+  scroll-snap-align: end;
+}
+
+.about-us h1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.about-us img {
+  object-fit: cover;
+  width: 40%;
+  height: 50vh;
+  margin-left: 20px;
+}
+
+.about-us p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 758px) {
+  .about-us {
+    margin-bottom: 10vh;
+  }
+  .about-us img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .about-us p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+/* FOOTER */
+.footer-container {
+  scroll-snap-align: end;
+  height: 100vh;
+  /* border: 1px golde`nrod solid; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+.footer-container img {
+  object-fit: cover;
+  width: 25%;
+  height: auto;
 }
