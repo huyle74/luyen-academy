@@ -1,25 +1,29 @@
-# Stage 1: Install dependencies
+# Stage 1: Build the application
 FROM node:18-alpine as builder
 
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
-RUN npm config set registry https://registry.npmjs.org/ && \
-    npm cache clean --force && \
-    npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
-# Stage 2: Final image
+COPY . .
+RUN npm run build
+
+# Debugging: Show the contents of /app
+RUN ls -la /app
+
+# Stage 2: Serve the application
 FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy dependencies from the builder stage
 COPY --from=builder /app/node_modules ./node_modules
-COPY . .
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/src ./src
+COPY --from=builder /app/package.json ./package.json
 
-RUN npm run build
-
-EXPOSE 8080
+EXPOSE 3000
 
 ENV NODE_ENV=production
 
