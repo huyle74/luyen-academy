@@ -12,8 +12,8 @@ export default function Products() {
   useEffect(() => {
     const fetch = async () => {
       const res = await fetchImages();
-      setImages(res);
-      console.log(res);
+      setImages(res.link);
+      console.log(res.env);
     };
     if (images.length === 0) {
       fetch();

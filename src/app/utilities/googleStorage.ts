@@ -28,5 +28,14 @@ export const fetchImages = async () => {
 
   // console.log(imageUrls);
 
-  return imageUrls;
+  return {
+    link: imageUrls,
+    env: [
+      process.env.GOOGLE_PROJECT_ID,
+      process.env.GOOGLE_PRIVATE_KEY_ID,
+      process.env.GOOGLE_PRIVATE_KEY,
+      process.env.GOOGLE_CLIENT_EMAIL,
+      process.env.GOOGLE_CLIENT_ID,
+    ],
+  };
 };
