@@ -13,6 +13,7 @@ export default function Products() {
     const fetch = async () => {
       const res = await fetchImages();
       setImages(res);
+      console.log(res);
     };
     if (images.length === 0) {
       fetch();
