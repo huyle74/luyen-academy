@@ -16,7 +16,7 @@ export default function Teacher() {
           flexDirection: "column",
         }}
         className="teacher"
-        id='teacher'
+        id="teacher"
       >
         <h1
           style={{
@@ -30,9 +30,8 @@ export default function Teacher() {
           <Grid2
             size={{ md: 5, xs: 12 }}
             sx={{
-              // border: "1px white solid",
               position: "relative",
-              pl: 5,
+
               height: `${matches ? "35vh" : "100%"}`,
             }}
           >
@@ -47,6 +46,8 @@ export default function Teacher() {
                 height: "80%",
                 position: "absolute",
                 bottom: "0",
+                left: "30%",
+                transform: " translateX(-50%)",
               }}
             ></Box>
           </Grid2>

@@ -10,24 +10,25 @@ export default function MainHeader() {
   const [dropDown, setDropDown] = useState<boolean>(false);
 
   useEffect(() => {
-    let animation;
-    if (dropDown) {
-      animation = gsap.to(".menu", {
-        width: "100vw",
-        ease: "power1.inOut",
-        duration: 0.5,
-      });
-    } else {
-      animation = gsap.to(".menu", {
-        width: 0,
-        ease: "power1.inOut",
-        duration: 0.5,
-      });
+    let animation: any;
+    if (matches) {
+      if (dropDown) {
+        animation = gsap.to("#menu", {
+          ease: "power1.inOut",
+          duration: 0.5,
+          height: "100vh",
+        });
+      } else {
+        animation = gsap.to("#menu", {
+          ease: "power1.inOut",
+          duration: 0.5,
+          height: 0,
+        });
+      }
     }
-
-    return () => {
-      animation.kill();
-    };
+    // return () => {
+    //   animation.kill();
+    // };
   }, [dropDown]);
 
   const handleDropdown = () => {
@@ -39,13 +40,7 @@ export default function MainHeader() {
   };
 
   return (
-    <Box
-      className="main-header"
-      sx={{
-        position: `${matches ? "relative" : "fixed"}`,
-        width: `${matches ? "fit-content" : "20vw"}`,
-      }}
-    >
+    <Box id="main-header">
       {matches ? (
         <Box>
           <IconButton
@@ -55,10 +50,9 @@ export default function MainHeader() {
               p: 0,
               right: 10,
               top: 10,
-              zIndex: 9999,
+              zIndex: 999,
               position: "fixed",
               backgroundColor: "white",
-              opacity: 0,
               color: "black",
               "&:hover": {
                 backgroundColor: "white",

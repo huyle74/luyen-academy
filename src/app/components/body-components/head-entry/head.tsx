@@ -8,14 +8,13 @@ export default function EntryBody() {
   return (
     <Box
       sx={{
+        height: "100vh",
         position: "relative",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        scrollSnapAlign: `center`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        // filter: "opacity(50%)",
         backgroundImage:
           "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464316107_122135743598351735_5721276897516419846_n.jpg')",
       }}
@@ -35,9 +34,9 @@ export default function EntryBody() {
       <Box
         sx={{
           p: `${matches ? 0 : 2}`,
-          width: "100%",
+          width: "60%",
           alignContent: "center",
-          zIndex: 999,
+          zIndex: 99,
         }}
         className="entry-body-title"
       >

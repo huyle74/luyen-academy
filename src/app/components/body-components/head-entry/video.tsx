@@ -6,13 +6,12 @@ export default function TiktokVideo() {
   return (
     <Box
       sx={{
-        width: "70%",
+        width: "40%",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
-        // border: "1px black solid",
       }}
       className="video-container"
     >
@@ -22,7 +21,6 @@ export default function TiktokVideo() {
           position: "absolute",
           left: `${matches ? "-80%" : "-30%"}`,
           top: `${matches ? "-30%" : "-10%"}`,
-          // flexDirection: `${matches ? "column" : "row"}`,
           width: "max-content",
         }}
       >
@@ -45,7 +43,7 @@ export default function TiktokVideo() {
         loop
         muted
         controls
-        className="tiktok-clip"
+        id="tiktok-clip"
         style={{
           height: `${matches ? "40vh" : "80vh"}`,
           marginRight: `${matches ? "20px" : "40px"}`,

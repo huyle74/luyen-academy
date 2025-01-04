@@ -13,7 +13,6 @@ export default function Products() {
     const fetch = async () => {
       const res = await fetchImages();
       setImages(res.link);
-      console.log(res.env);
     };
     if (images.length === 0) {
       fetch();
@@ -48,10 +47,10 @@ export default function Products() {
   }, []);
 
   return (
-    <Box className="products">
+    <Box className="products" id='products'>
       <h1>CÁC SẢN PHẨM TỪ HỌC VIỆN</h1>
-      <Box sx={{ width: "98%", m: "auto" }} ref={picContainerRef}>
-        <Grid2 container spacing={0.5}>
+      <Box sx={{ m: "auto" }} ref={picContainerRef} id="product-gallery">
+        <Grid2 container spacing={2}>
           {images.map((img: string, index: number) => {
             return (
               <Grid2 key={index} size={{ md: 3, xs: 6 }}>

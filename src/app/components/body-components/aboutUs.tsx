@@ -20,6 +20,7 @@ export default function AboutPage() {
             height: "100%",
             alignItems: "center",
             flexDirection: `${matches ? "column" : "row"}`,
+            width: `${matches ? "100%" : "80%"}`,
           }}
         >
           <img
