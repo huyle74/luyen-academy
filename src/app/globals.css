@@ -14,7 +14,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
 * {
@@ -29,7 +29,6 @@ a {
 }
 
 /* HEADER */
-
 #menu-item-text {
   text-align: center;
   font-weight: 600;
