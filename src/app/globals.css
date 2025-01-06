@@ -293,6 +293,7 @@ a {
   background-color: yellow;
   color: black;
   scale: 1.1;
+  transition: 0.1s ease;
 }
 
 .social-network-icon {
@@ -309,7 +310,7 @@ a {
 
 .social-network-icon a:hover {
   scale: 1.2;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .social-network-icon img {

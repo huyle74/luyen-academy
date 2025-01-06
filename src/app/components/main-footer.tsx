@@ -9,11 +9,11 @@ export default function MainFooter() {
   return (
     <Box
       sx={{
-        height: `${matches ? "100%" : "100vh"}`,
+        height: `${matches ? "100vh" : "100vh"}`,
         color: "white",
         position: "relative",
         backgroundSize: "cover",
-        backgroundPosition: "50% 70%",
+        backgroundPosition: `${matches ? "50% 90%" : "50% 70%"}`,
         backgroundImage:
           'url("https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-image.jpg")',
         fontFamily: "arial",
@@ -35,16 +35,17 @@ export default function MainFooter() {
           zIndex: 99,
           position: "relative",
           textAlign: "center",
-          height: "50%",
+          height: `${matches ? "60%" : "50%"}`,
           alignContent: "center",
         }}
       >
         <h2
           style={{
-            width: "50%",
-            margin: "auto",
+            width: `${matches ? "95%" : "50%"}`,
+            margin: `${matches ? "0.8rem" : "auto"}`,
             border: "white 1px solid",
-            padding: "30px",
+            padding: `${matches ? "0.8rem" : "30px"}`,
+            fontSize: `${matches ? "0.9rem" : ""}`,
           }}
         >
           THAM GIA LUYẾN ACADEMY ĐỂ TRỞ BIẾN Ý TƯỞNG CỦA BẠN THÀNH 1 CHIẾC VÁY
@@ -53,23 +54,24 @@ export default function MainFooter() {
       </Box>
       <Box
         sx={{
-          height: "50%",
+          height: `${matches ? "100%" : "50%"}`,
           backgroundColor: "#2d2f31",
-          clipPath: "polygon(0 16%, 100% 0%, 100% 100%, 0% 100%)",
+          clipPath: "polygon(0 10%, 100% 0%, 100% 100%, 0% 100%)",
           display: "flex",
+          p: 0,
+          m: 0,
         }}
       >
         <Box
           sx={{
-            width: `${matches ? "100%" : "50%"}`,
-            m: "auto",
-            // border: "1px white solid",
+            width: `${matches ? "80%" : "50%"}`,
+            m: `${matches ? "50px 0 0 40px" : "auto"}`,
             display: "flex",
             flexDirection: `${matches ? "column" : "row"}`,
-            justifyContent: "space-between",
+            justifyContent: `${matches ? "center" : "space-between"}`,
           }}
         >
-          <Grid2 container>
+          <Grid2 container spacing={3}>
             <Grid2
               size={{ md: 4, xs: 12 }}
               sx={{
@@ -85,7 +87,7 @@ export default function MainFooter() {
               <h3
                 style={{
                   backgroundColor: "#f01267",
-                  width: "min-content",
+                  width: `${matches ? "max-content" : "min-content"}`,
                   marginTop: "10px",
                 }}
               >
@@ -120,7 +122,7 @@ export default function MainFooter() {
               <a href="#">Liên Hệ</a>
             </Grid2>
             <Grid2 className="social-network-icon" size={{ md: 4, xs: 12 }}>
-              <a href="#" target="blank">
+              <a href="https://www.tiktok.com/@luyen.vay.cuoi" target="blank">
                 <img
                   style={{
                     width: "80px",
