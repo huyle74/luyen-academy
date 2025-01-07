@@ -38,7 +38,7 @@ export default function Menu() {
         }}
       >
         <MenuItem id={"entry-body"}>KHÓA HỌC</MenuItem>
-        <MenuItem id={"teacher"}>SẢN PHẨM</MenuItem>
+        <MenuItem id={"products"}>SẢN PHẨM</MenuItem>
         <MenuItem id={"about"}>VỀ CHÚNG TÔI</MenuItem>
         <MenuItem id={"contact"}>LIÊN HỆ</MenuItem>
       </Box>

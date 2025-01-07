@@ -1,7 +1,4 @@
-import { useRef, useEffect, useState } from "react";
 import { Box, useMediaQuery, Grid2 } from "@mui/material";
-import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function MainFooter() {
   const matches = useMediaQuery("(max-width:758px)");
@@ -104,7 +101,7 @@ export default function MainFooter() {
                 410 Đ. Nguyễn Văn Tạo, Long Thới, Nhà Bè, Hồ Chí Minh
               </p>
               <a
-                href="#"
+                href="tel:0931969091"
                 style={{
                   fontWeight: 1000,
                   fontSize: "0.8rem",
@@ -122,7 +119,7 @@ export default function MainFooter() {
               <a href="#">Liên Hệ</a>
             </Grid2>
             <Grid2 className="social-network-icon" size={{ md: 4, xs: 12 }}>
-              <a href="https://www.tiktok.com/@luyen.vay.cuoi" target="blank">
+              <a href="https://www.tiktok.com/@luyn.vy.ci?_t=ZS-8spiZfCLHbW&_r=1" target="blank">
                 <img
                   style={{
                     width: "80px",

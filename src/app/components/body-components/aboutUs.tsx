@@ -1,55 +1,60 @@
-import { Box, useMediaQuery } from "@mui/material";
+import { Box, useMediaQuery, Grid2 } from "@mui/material";
 
 export default function AboutPage() {
   const matches = useMediaQuery("(max-width:758px)");
 
   return (
     <Box className="about-us" id="about">
-      <Box
-        sx={{
-          height: `${matches ? "100%" : "100vh"}`,
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <h1>ABOUT US</h1>
-        <Box
-          sx={{
-            display: "flex",
-            height: "100%",
-            alignItems: "center",
-            flexDirection: `${matches ? "column" : "row"}`,
-            width: `${matches ? "100%" : "80%"}`,
-          }}
-        >
-          <img
-            src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/dress.jpg"
-            alt="picture"
-          />
+      <Grid2 container sx={{ height: "100%" }}>
+        <Grid2 size={{ md: 3, xs: 12 }}>
           <Box
             sx={{
-              height: "100%",
+              backgroundColor: "#f01267",
               alignContent: "center",
-              //   borderLeft: "1px black solid",
-              p: 4,
-              fontSize: "1.4rem",
+              height: "100%",
             }}
           >
-            <p>
-              The copy here is strong and to the point. It also addresses so
-              much more than the croissants and cookies. These cafes are each “a
-              place for communities to gather, to feel welcomed, to create a
-              sense of home and belonging.” And the mission is to continue this
-              presence and community: “We are here to inspire, care for and
-              nurture life. Every day.” Now, that’s a lofty goal. But for a
-              beloved local brand whose food is well-known, it’s perfect for the
-              about us page. This lets visitors know why Tatte exists—and the
-              reason is so much more compelling than selling coffee and treats.
-            </p>
+            <h2>About</h2>
+            <h1>LUYẾN ACADEMY</h1>
           </Box>
-        </Box>
-      </Box>
+        </Grid2>
+        <Grid2
+          size={{ md: 6, xs: 12 }}
+          sx={{
+            position: "relative",
+            backgroundImage:
+              "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471321122_122145108464351735_7650144338733368271_n.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: `center`,
+          }}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              bottom: 0,
+              right: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.6)",
+            }}
+          ></Box>
+          <p>
+            Luyến Academy tự hào là học viện hàng đầu với hơn 20 năm kinh nghiệm
+            trong lĩnh vực đào tạo may mặc, chuyên sâu về thiết kế và may đo các
+            trang phục cao cấp như đầm cưới, váy dạ hội và áo dài ba sui. Với bề
+            dày kinh nghiệm, học viện đã đào tạo hàng ngàn học viên, giúp họ nắm
+            vững kỹ thuật may mặc tinh xảo, từ cơ bản đến nâng cao, và phát
+            triển tư duy sáng tạo trong thiết kế. Đội ngũ giảng viên giàu chuyên
+            môn cùng phương pháp giảng dạy thực tiễn của Luyến Academy là chìa
+            khóa giúp học viên tự tin bước vào ngành thời trang và khẳng định
+            dấu ấn riêng của mình.
+          </p>
+        </Grid2>
+        <Grid2
+          size={{ md: 3, xs: 12 }}
+          sx={{ backgroundColor: "#2d2f31" }}
+        ></Grid2>
+      </Grid2>
     </Box>
   );
 }
