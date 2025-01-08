@@ -4,7 +4,7 @@ export default function Testimonial() {
   const matches = useMediaQuery("(max-width:758px)");
 
   return (
-    <Box className="testimonial" >
+    <Box className="testimonial">
       <Box
         sx={{
           height: `${matches ? "100%" : "100vh"}`,
@@ -41,7 +41,7 @@ export default function Testimonial() {
                 />
                 <p
                   style={{
-                    width: "80%",
+                    width: `${matches ? "80%" : "50%"}`,
                     fontSize: `${matches ? "0.8rem" : "1.2rem"}`,
                   }}
                 >
@@ -58,7 +58,7 @@ export default function Testimonial() {
                 />
                 <p
                   style={{
-                    width: "80%",
+                    width: `${matches ? "80%" : "50%"}`,
                     fontSize: `${matches ? "0.8rem" : "1.2rem"}`,
                   }}
                 >
@@ -87,7 +87,7 @@ export default function Testimonial() {
                 />
                 <p
                   style={{
-                    width: "80%",
+                    width: `${matches ? "80%" : "50%"}`,
                     fontSize: "1.2rem",
                   }}
                 >

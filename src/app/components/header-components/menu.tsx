@@ -1,16 +1,64 @@
-import { Box, useMediaQuery } from "@mui/material";
+import { useState, useEffect } from "react";
+
+import { Box, useMediaQuery, Button } from "@mui/material";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
 import MenuItem from "./menu-components/menu-item";
+import Courses from "./menu-components/menu-course";
+import gsap from "gsap";
 
 export default function Menu() {
   const matches = useMediaQuery("(max-width:758px)");
+  const [dropDown, setDropDown] = useState<boolean>(false);
+
+  useEffect(() => {
+    const divBody = document.querySelector(".body");
+
+    if (divBody) {
+      divBody.addEventListener("mousedown", () => {
+        if (dropDown) {
+          setDropDown(false);
+        }
+      });
+    }
+    return () => {
+      if (divBody) {
+        divBody.removeEventListener("mousedown", () => {
+          if (dropDown) {
+            setDropDown(false);
+          }
+        });
+      }
+    };
+  }, [dropDown]);
+
+  useEffect(() => {
+    if (dropDown) {
+      gsap.to("#course-list", {
+        height: `${matches ? "100%" : "25vh"}`,
+      });
+    } else {
+      gsap.to("#course-list", {
+        height: 0,
+      });
+    }
+  }, [dropDown]);
+
+  const handleClick = () => {
+    if (dropDown) {
+      setDropDown(false);
+    } else {
+      setDropDown(true);
+    }
+  };
 
   return (
     <Box
       id="menu"
       sx={{
         height: `${matches ? 0 : "100%"}`,
-        display: `${matches ? "flex" : "flex"}`,
+        display: "flex",
         alignItems: "center",
         flexDirection: `${matches ? "column" : "row"}`,
         position: `${matches ? "fixed" : "relative"}`,
@@ -31,17 +79,37 @@ export default function Menu() {
       </a>
       <Box
         sx={{
-          width: "40vw",
+          width: `${matches ? "100%" : "40vw"}`,
           display: "flex",
           flexDirection: `${matches ? "column" : "row"}`,
-          justifyContent: "space-between",
+          justifyContent: `${matches ? "" : "space-between"}`,
+          alignItems: "center",
         }}
       >
-        <MenuItem id={"entry-body"}>KHÓA HỌC</MenuItem>
+        <Button
+          onClick={handleClick}
+          sx={{
+            p: 0,
+            ml: 3.3,
+            fontFamily: "Fjalla One",
+            width: "min-content",
+            whiteSpace: "nowrap",
+            fontWeight: 600,
+            fontSize: `${matches ? "1.3rem" : "1.5rem"}`,
+            color: "black",
+            "&:hover": {
+              color: "#f01267",
+            },
+          }}
+          endIcon={dropDown ? <TipsAndUpdatesIcon /> : <LightbulbIcon />}
+        >
+          KHÓA HỌC
+        </Button>
         <MenuItem id={"products"}>SẢN PHẨM</MenuItem>
         <MenuItem id={"about"}>VỀ CHÚNG TÔI</MenuItem>
         <MenuItem id={"contact"}>LIÊN HỆ</MenuItem>
       </Box>
+      <Courses onClick={handleClick} />
     </Box>
   );
 }

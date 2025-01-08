@@ -30,12 +30,28 @@ a {
 
 /* HEADER */
 #menu-item-text {
-  text-align: center;
   font-weight: 600;
 }
 
 #menu-item-text:hover {
   color: #f01267;
+}
+
+#course-list a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Mali", serif;
+  white-space: nowrap;
+  padding-right: 15px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#course-list a:hover {
+  background-color: #f01267;
+  color: white;
+  border-right: none;
+  border-bottom: none;
 }
 
 .logo-link {
@@ -73,9 +89,14 @@ a {
   .logo-link {
     width: 50%;
   }
+  #menu-item-text {
+    padding-top: 1.1rem;
+    white-space: nowrap;
+  }
+  #course-list a {
+    font-size: 1rem;
+  }
 }
-
-/* BODY CONTAINER */
 
 /* ENTRY BODY*/
 
@@ -166,9 +187,8 @@ a {
   height: 100%;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: -7%;
   z-index: 100;
-  transform: translateX(-50%);
 }
 
 .teacher h2 {
@@ -198,12 +218,14 @@ a {
   .teacher img {
     width: 50%;
     height: auto;
+    right: 20%;
   }
 }
 
 /* PRODUCTS PAGE */
 .products {
   margin-bottom: 1rem;
+  background-color: white;
 }
 
 #product-gallery {
@@ -214,6 +236,9 @@ a {
   text-align: center;
   padding: 4rem;
   font-weight: 100;
+  background-color: #f01267;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .product-pics {
@@ -335,4 +360,149 @@ a {
 .social-network-icon img {
   filter: invert(1);
   object-fit: cover;
+}
+
+/* BASIC COURSE */
+.slideshow-image {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+.slideshow-image::-webkit-scrollbar {
+  display: none;
+}
+
+.image-container {
+  height: 90vh;
+  background-color: aliceblue;
+  scroll-snap-align: end;
+}
+
+.image-container img {
+  object-fit: cover;
+  object-position: -50px 50%;
+  height: 100%;
+  width: 50vw;
+}
+
+.thumbnail-image {
+  height: 20vh;
+  width: 6vw;
+  margin-bottom: 5px;
+}
+
+#thumbnail-container::-webkit-scrollbar {
+  display: none;
+}
+
+#thumbnail-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.thumbnail-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding-right: 15px;
+  border-right: 4px solid #212121;
+}
+
+@media screen and (max-width: 758px) {
+  #class-gallery-container h1 {
+    font-size: 1.5rem;
+  }
+  #class-gallery-container h2 {
+    font-size: 1.2rem;
+  }
+  #thumbnail-container {
+    height: 100%;
+  }
+  .thumbnail-image {
+    width: 14vw;
+    padding-right: 0;
+  }
+  .thumbnail-image img {
+  }
+  .image-container {
+    height: 100%;
+  }
+  .image-container img {
+    width: 95vw;
+  }
+}
+
+/* BASIC COURSE CONTENT */
+.basic-lesson-container img {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.basic-lesson {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+  height: 100%;
+  align-content: center;
+}
+
+.basic-lesson h2 {
+  border-bottom: 2px black solid;
+  margin-bottom: 13px;
+}
+
+.result-after-course {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.result-after-course h2 {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 2rem 0 2rem 0;
+  width: max-content;
+  margin-right: 3rem;
+}
+.result-after-course p {
+  padding: 10px 0 0 0;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 758px) {
+  .basic-lesson {
+    padding: 1rem 0 0 0;
+  }
+  .basic-lesson h2 {
+    border-bottom: 0.7px black solid;
+    margin-bottom: 6px;
+  }
+  .basic-lesson-container img {
+    margin-top: 1rem;
+  }
+  .result-after-course {
+    width: 100%;
+    flex-direction: column;
+  }
+  .result-after-course h2 {
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0
+  }
+  .result-after-course p {
+    width: 80%;
+    font-size: 1rem;
+    margin: auto;
+  }
 }

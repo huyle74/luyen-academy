@@ -16,7 +16,7 @@ export const fetchImages = async () => {
   });
 
   const bucketName = "luyen-wedding-academy-bucket";
-  const folderName = "luyen-academy-pics/product-collection";
+  const folderName = "class-gallery";
 
   const [files] = await storage.bucket(bucketName).getFiles({
     prefix: folderName,
@@ -26,16 +26,14 @@ export const fetchImages = async () => {
     return `https://storage.cloud.google.com/${bucketName}/${file.name}`;
   });
 
-  // console.log(imageUrls);
-
   return {
     link: imageUrls,
-    env: [
-      process.env.GOOGLE_PROJECT_ID,
-      process.env.GOOGLE_PRIVATE_KEY_ID,
-      process.env.GOOGLE_PRIVATE_KEY,
-      process.env.GOOGLE_CLIENT_EMAIL,
-      process.env.GOOGLE_CLIENT_ID,
-    ],
+    // env: [
+    //   process.env.GOOGLE_PROJECT_ID,
+    //   process.env.GOOGLE_PRIVATE_KEY_ID,
+    //   process.env.GOOGLE_PRIVATE_KEY,
+    //   process.env.GOOGLE_CLIENT_EMAIL,
+    //   process.env.GOOGLE_CLIENT_ID,
+    // ],
   };
 };

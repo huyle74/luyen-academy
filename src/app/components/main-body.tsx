@@ -8,7 +8,7 @@ import AboutPage from "./body-components/aboutUs";
 
 export default function MainBody() {
   return (
-    <Box>
+    <Box className='body'>
       <EntryBody />
       <Testimonial />
       <Teacher />

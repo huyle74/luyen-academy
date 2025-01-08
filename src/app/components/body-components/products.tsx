@@ -4,22 +4,12 @@ import { Box, Grid2 } from "@mui/material";
 import gsap from "gsap";
 
 import { gallery } from "@/app/utilities/imageLinks";
-import { fetchImages } from "@/app/utilities/googleStorage";
 
 export default function Products() {
   const [images, setImages] = useState<any>([]),
     picContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const fetch = async () => {
-      const res = await fetchImages();
-      setImages(res.link);
-      console.log(res.env);
-    };
-    if (images.length === 0) {
-      fetch();
-    }
-
     const observe = new IntersectionObserver(
       (entries, observe) => {
         entries.forEach((entry) => {

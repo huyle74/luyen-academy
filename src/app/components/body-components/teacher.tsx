@@ -1,4 +1,4 @@
-import { Box, Grid2, useMediaQuery } from "@mui/material";
+import { Box, Grid2, useMediaQuery, Button } from "@mui/material";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -31,8 +31,8 @@ export default function Teacher() {
             size={{ md: 5, xs: 12 }}
             sx={{
               position: "relative",
-
               height: `${matches ? "35vh" : "100%"}`,
+              // border: "1px white solid",
             }}
           >
             <img
@@ -42,11 +42,11 @@ export default function Teacher() {
             <Box
               sx={{
                 backgroundColor: "#fbe3d9",
-                width: "40%",
+                width: `${matches ? "30%" : "40%"}`,
                 height: "80%",
                 position: "absolute",
                 bottom: "0",
-                left: "30%",
+                left: `${matches ? "50%" : "40%"}`,
                 transform: " translateX(-50%)",
               }}
             ></Box>
@@ -54,7 +54,7 @@ export default function Teacher() {
           <Grid2
             size={{ md: 7, xs: 12 }}
             sx={{
-              pl: 5,
+              pl: `${matches ? 0 : 5}`,
             }}
           >
             <Box
@@ -79,32 +79,33 @@ export default function Teacher() {
                 <VerifiedIcon sx={{ height: "3rem", fontSize: "3rem" }} />
               </Box>
             </Box>
-            <Box sx={{ mt: "2rem", width: `${matches ? "100%" : "70%"}` }}>
+            <Box sx={{ mt: "2rem", width: `${matches ? "95%" : "70%"}` }}>
               <h3>
                 <p>&#8226;</p>
-                <p>Founder and lead designer at "Luyen Academy".​</p>
+                <p>Nhà sáng lập và thiết kế tại "Luyen Academy". ​</p>
               </h3>
               <h3>
                 <p>&#8226;</p>
                 <p>
-                  Recognized as a worldwide wedding fashion designer with 25
-                  years of experience.
+                  Chuyên gia hàng đầu trong việc thiết kế và may đo các sản phẩm
+                  thời trang cao cấp, từ những chiếc váy cưới sang trọng, trang
+                  phục dạ hội lộng lẫy đến tà áo dài truyền thống đầy tinh tế.
                 </p>
-              </h3>
-              <h3>
-                <p>&#8226;</p>
-                <p>Tatiana's YouTube channel passed 100,000 subscribers.</p>
               </h3>
               <h3>
                 <p>&#8226;</p>
                 <p>
-                  Acclaimed tutor and former BurdaStyle lead wedding and
-                  corset-making instructor.
+                  Với hơn 20 năm kinh nghiệm trong lĩnh vực thiết kế và sản xuất
+                  váy cưới, dạ hội và áo dài, cô Luyến đã ghi dấu ấn không chỉ
+                  trong nước mà còn trên thị trường quốc tế.
                 </p>
               </h3>
               <h3>
                 <p>&#8226;</p>
-                <p>Tatiana's YouTube channel passed 100,000 subscribers.</p>
+                <p>
+                  Đào tạo hàng trăm học viên trở thành những thợ may, nhà thiết
+                  kế giỏi trong lĩnh vực này.
+                </p>
               </h3>
             </Box>
             <Box
@@ -115,29 +116,36 @@ export default function Teacher() {
                 fontFamily: "arial",
               }}
             >
-              <Box
+              <Button
+                href="tel:0931969091"
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   pr: 4,
                   fontSize: "1rem",
+                  color: "white",
+                  width: "fit-content",
                 }}
               >
                 <PhoneAndroidIcon sx={{ fontSize: "2rem" }} />
-                <p>+84 909 099 999</p>
-              </Box>
-              <Box
+                <p>+84 93 196 9091</p>
+              </Button>
+              <Button
+                target="blank"
+                href="https://www.facebook.com/people/Luy%E1%BA%BFn-Academy/61560552058905/"
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   pr: 4,
                   fontSize: "1rem",
                   mt: 1,
+                  color: "white",
+                  width: "fit-content",
                 }}
               >
                 <FacebookIcon sx={{ fontSize: "2rem" }} />
                 <p>Luyen Dang</p>
-              </Box>
+              </Button>
             </Box>
           </Grid2>
         </Grid2>

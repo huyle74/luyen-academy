@@ -45,8 +45,8 @@ export default function MainFooter() {
             fontSize: `${matches ? "0.9rem" : ""}`,
           }}
         >
-          THAM GIA LUYẾN ACADEMY ĐỂ TRỞ BIẾN Ý TƯỞNG CỦA BẠN THÀNH 1 CHIẾC VÁY
-          ƯỚC MƠ
+          Hãy đến với Luyến Đặng Academy – nơi khơi nguồn đam mê và biến ước mơ
+          của bạn thành hiện thực!
         </h2>
       </Box>
       <Box
@@ -119,7 +119,10 @@ export default function MainFooter() {
               <a href="#">Liên Hệ</a>
             </Grid2>
             <Grid2 className="social-network-icon" size={{ md: 4, xs: 12 }}>
-              <a href="https://www.tiktok.com/@luyn.vy.ci?_t=ZS-8spiZfCLHbW&_r=1" target="blank">
+              <a
+                href="https://www.tiktok.com/@luyn.vy.ci?_t=ZS-8spiZfCLHbW&_r=1"
+                target="blank"
+              >
                 <img
                   style={{
                     width: "80px",

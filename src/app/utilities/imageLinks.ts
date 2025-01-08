@@ -11,3 +11,17 @@ export const gallery: any[] = [
   "https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471304278_122145106586351735_4990426603623543452_n.jpg",
   "https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471321122_122145108464351735_7650144338733368271_n.jpg",
 ];
+
+export const class_gallery = [
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/1.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/10.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/11.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/2.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/3.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/4.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/5.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/6.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/7.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/8.jpg",
+  "https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-gallery/9.jpg",
+];

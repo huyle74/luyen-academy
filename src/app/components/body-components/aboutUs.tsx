@@ -1,8 +1,6 @@
-import { Box, useMediaQuery, Grid2 } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 
 export default function AboutPage() {
-  const matches = useMediaQuery("(max-width:758px)");
-
   return (
     <Box className="about-us" id="about">
       <Grid2 container sx={{ height: "100%" }}>
@@ -23,7 +21,7 @@ export default function AboutPage() {
           sx={{
             position: "relative",
             backgroundImage:
-              "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471321122_122145108464351735_7650144338733368271_n.jpg')",
+              "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/about-background.jpg')",
             backgroundSize: "cover",
             backgroundPosition: `center`,
           }}

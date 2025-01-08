@@ -51,8 +51,8 @@ export default function EntryBody() {
         </h1>
         <p style={{ fontSize: `${matches ? "1rem" : "1.5rem"}` }}>
           <span style={{ backgroundColor: "pink" }}>
-            Nơi Kiến Tạo Nghề Uớc Mơ - Đào tạo, truyền thụ và giúp học viên thực
-            hành để có thể tự may đầm dạ hội, váy cưới.
+            Khám phá sự sáng tạo vô hạn và biến đam mê thành nghề nghiệp. Hãy để
+            thiết kế thời trang là con đường bạn tỏa sáng
           </span>
         </p>
       </Box>

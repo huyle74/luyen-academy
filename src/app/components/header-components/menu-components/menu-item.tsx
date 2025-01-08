@@ -36,7 +36,6 @@ export default function MenuItem({ children, id }: childProps) {
       href="#"
       style={{
         fontSize: `${matches ? "1.3rem" : "1.5rem"}`,
-        paddingTop: `${matches ? "1.3rem" : 0}`,
       }}
     >
       <p id="menu-item-text" ref={itemRef}>
