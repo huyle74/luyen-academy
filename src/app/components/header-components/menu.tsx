@@ -73,7 +73,7 @@ export default function Menu() {
       <a href="#" className="logo-link">
         <img
           className="menu-logo"
-          src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/logo.jpg"
+          src="https://storage.googleapis.com/luyen-wedding-academy-bucket/logo.jpg"
           alt="logo"
         />
       </a>
