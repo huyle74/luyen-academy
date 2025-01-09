@@ -183,11 +183,11 @@ a {
 
 .teacher img {
   object-fit: cover;
-  width: auto;
-  height: 100%;
+  /* width: auto; */
+  height: 100vh;
   position: absolute;
   bottom: 0;
-  right: -7%;
+  right: -13%;
   z-index: 100;
 }
 

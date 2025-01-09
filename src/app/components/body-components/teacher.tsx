@@ -32,11 +32,10 @@ export default function Teacher() {
             sx={{
               position: "relative",
               height: `${matches ? "35vh" : "100%"}`,
-              // border: "1px white solid",
             }}
           >
             <img
-              src="https://static.vecteezy.com/system/resources/thumbnails/042/057/892/small_2x/ai-generated-female-teacher-with-eyeglasses-isolated-on-transparent-background-png.png"
+              src="https://storage.googleapis.com/luyen-wedding-academy-bucket/Teacher.png"
               alt="TEACHER"
             />
             <Box
