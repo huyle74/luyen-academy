@@ -371,7 +371,6 @@ a {
   height: 100%;
   margin-left: auto;
   position: relative;
-  scroll-snap-type: x mandatory;
 }
 
 .slideshow-image::-webkit-scrollbar {
@@ -381,7 +380,6 @@ a {
 .image-container {
   height: 90vh;
   background-color: aliceblue;
-  scroll-snap-align: end;
 }
 
 .image-container img {
@@ -418,6 +416,9 @@ a {
 }
 
 @media screen and (max-width: 758px) {
+  .slideshow-image {
+    scroll-snap-type: x mandatory;
+  }
   #class-gallery-container h1 {
     font-size: 1.5rem;
   }
@@ -437,14 +438,15 @@ a {
     height: 100%;
   }
   .image-container img {
-    width: 95vw;
+    width: 82vw;
+    scroll-snap-align: end;
   }
 }
 
 /* BASIC COURSE CONTENT */
 .basic-lesson-container img {
   object-fit: cover;
-  height: 50vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -461,12 +463,18 @@ a {
   margin-bottom: 13px;
 }
 
+.basic-lesson h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
 .result-after-course {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 5vh;
   display: flex;
   align-items: center;
+
+  justify-content: center;
 }
 
 .result-after-course h2 {
@@ -475,10 +483,12 @@ a {
   padding: 2rem 0 2rem 0;
   width: max-content;
   margin-right: 3rem;
+  white-space: nowrap;
 }
 .result-after-course p {
   padding: 10px 0 0 0;
   font-size: 1.2rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 758px) {
@@ -489,8 +499,12 @@ a {
     border-bottom: 0.7px black solid;
     margin-bottom: 6px;
   }
+  .basic-lesson h3 {
+    margin: 0.5rem 0 0.5rem 0;
+  }
   .basic-lesson-container img {
     margin-top: 1rem;
+    height: 50vh;
   }
   .result-after-course {
     width: 100%;
@@ -498,7 +512,7 @@ a {
   }
   .result-after-course h2 {
     font-size: 1.1rem;
-    margin: 0 0 1rem 0
+    margin: 0 0 1rem 0;
   }
   .result-after-course p {
     width: 80%;

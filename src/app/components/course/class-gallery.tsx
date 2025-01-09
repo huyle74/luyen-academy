@@ -1,8 +1,13 @@
+import { ReactNode } from "react";
 import { Box, useMediaQuery } from "@mui/material";
 
 import SliderShow from "./sliderShow";
 
-export default function ClassGallery() {
+interface Children {
+  children: ReactNode;
+}
+
+const ClassGallery = ({ children }: Children) => {
   const matches = useMediaQuery("(max-width:758px)");
 
   return (
@@ -16,7 +21,7 @@ export default function ClassGallery() {
         }}
         id="class-gallery-container"
       >
-        <h1 style={{ marginBottom: "20px" }}>KHÓA CƠ BẢN</h1>
+        <h1 style={{ marginBottom: "20px" }}>{children}</h1>
         <h2 style={{ lineHeight: "2.3rem" }}>
           Khóa học giúp học viên tự tin tạo ra các thiết kế độc đáo, hoàn thiện
           sản phẩm thời trang cao cấp từ bản vẽ đến thực tế.
@@ -25,4 +30,5 @@ export default function ClassGallery() {
       </Box>
     </Box>
   );
-}
+};
+export default ClassGallery;
