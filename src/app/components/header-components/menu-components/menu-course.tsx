@@ -49,10 +49,10 @@ const Courses: React.FC<ChildProps> = ({ onClick }) => {
             <a href="/basic-course">Khóa Cơ Bản</a>
           </Grid2>
           <Grid2 size={{ md: 6 }}>
-            <a href="#">Khóa Nâng Cao</a>
+            <a href="/khoa-nang-cao">Khóa Nâng Cao</a>
           </Grid2>
           <Grid2 size={{ md: 6 }}>
-            <a href="#">Khóa Trang Trí</a>
+            <a href="/khoa-trang-tri">Khóa Trang Trí</a>
           </Grid2>
         </Grid2>
       </Box>
