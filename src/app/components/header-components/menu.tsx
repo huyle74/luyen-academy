@@ -79,7 +79,7 @@ export default function Menu() {
       </a>
       <Box
         sx={{
-          width: `${matches ? "100%" : "40vw"}`,
+          width: `${matches ? "100%" : "50vw"}`,
           display: "flex",
           flexDirection: `${matches ? "column" : "row"}`,
           justifyContent: `${matches ? "" : "space-between"}`,
@@ -87,10 +87,27 @@ export default function Menu() {
         }}
       >
         <Button
+          href="/"
+          sx={{
+            p: 0,
+            fontFamily: "Fjalla One",
+            width: "min-content",
+            whiteSpace: "nowrap",
+            fontWeight: 600,
+            fontSize: `${matches ? "1.3rem" : "1.5rem"}`,
+            color: "black",
+            "&:hover": {
+              color: "#f01267",
+            },
+          }}
+        >
+          TRANG CHỦ
+        </Button>
+        <Button
           onClick={handleClick}
           sx={{
             p: 0,
-            ml: 3.3,
+            transform: `${matches ? "translate(10px, 5px)" : 0}`,
             fontFamily: "Fjalla One",
             width: "min-content",
             whiteSpace: "nowrap",

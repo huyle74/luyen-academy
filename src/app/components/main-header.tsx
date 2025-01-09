@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, useMediaQuery, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import gsap from "gsap";
 
 import Menu from "./header-components/menu";
@@ -10,25 +11,21 @@ export default function MainHeader() {
   const [dropDown, setDropDown] = useState<boolean>(false);
 
   useEffect(() => {
-    let animation: any;
     if (matches) {
       if (dropDown) {
-        animation = gsap.to("#menu", {
+        gsap.to("#menu", {
           ease: "power1.inOut",
           duration: 0.5,
           height: "100vh",
         });
       } else {
-        animation = gsap.to("#menu", {
+        gsap.to("#menu", {
           ease: "power1.inOut",
           duration: 0.5,
           height: 0,
         });
       }
     }
-    // return () => {
-    //   animation.kill();
-    // };
   }, [dropDown]);
 
   const handleDropdown = () => {
@@ -59,11 +56,19 @@ export default function MainHeader() {
               },
             }}
           >
-            <MenuIcon
-              sx={{
-                m: 1,
-              }}
-            />
+            {dropDown ? (
+              <CloseIcon
+                sx={{
+                  m: 1,
+                }}
+              />
+            ) : (
+              <MenuIcon
+                sx={{
+                  m: 1,
+                }}
+              />
+            )}
           </IconButton>
           <Menu />
         </Box>
