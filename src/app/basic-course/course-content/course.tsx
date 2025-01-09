@@ -120,7 +120,7 @@ export default function AllLesson() {
             )}
             <Grid2 size={{ md: 6, xs: 12 }}>
               <Box className="basic-lesson">
-                <h2>Buổi 20-39</h2>
+                <h2>Buổi 20-35</h2>
                 <p>
                   Thực hành may thân váy, ráp tùng và thân váy, kỹ thuật may dây
                   kéo.
@@ -129,10 +129,10 @@ export default function AllLesson() {
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <Box className="basic-lesson">
-                <h2>Buổi 40-70</h2>
+                <h2>Buổi 36-40</h2>
                 <p>
-                  Khám phá kỹ thuật may váy cưới, dạ hội, áo dài một trong những
-                  mẫu được yêu thích nhất.
+                  Hướng dẫn bí quyết tạo lên những phom dáng áo chuẩn, hợp thời
+                  trang và cách tư vấn khách hàng, chốt sale hiệu quả.
                 </p>
               </Box>
             </Grid2>
