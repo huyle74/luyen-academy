@@ -12,7 +12,7 @@ export default function MainFooter() {
         backgroundSize: "cover",
         backgroundPosition: `${matches ? "50% 90%" : "50% 70%"}`,
         backgroundImage:
-          'url("https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-image.jpg")',
+          'url("https://storage.googleapis.com/luyen-wedding-academy-bucket/class-image.jpg")',
         fontFamily: "arial",
       }}
       id="contact"
@@ -77,7 +77,7 @@ export default function MainFooter() {
               }}
             >
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/logo.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/logo.jpg"
                 alt="logo"
                 style={{ objectFit: "cover", width: "35%", height: "auto" }}
               />
