@@ -40,14 +40,14 @@ export default function AllLesson() {
             ) : (
               <Grid2 size={{ md: 6, xs: 12 }}>
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464048464_122135610632351735_7048512483400802110_n.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464048464_122135610632351735_7048512483400802110_n.jpg"
                   alt="img"
                 />
               </Grid2>
             )}
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464316107_122135743598351735_5721276897516419846_n.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464316107_122135743598351735_5721276897516419846_n.jpg"
                 alt="img"
               />
             </Grid2>
@@ -70,7 +70,7 @@ export default function AllLesson() {
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471205009_122145108092351735_7491170319897941532_n.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471205009_122145108092351735_7491170319897941532_n.jpg"
                 alt="img"
               />
             </Grid2>
@@ -79,7 +79,7 @@ export default function AllLesson() {
             ) : (
               <Grid2 size={{ md: 6, xs: 12 }}>
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/4.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/4.jpg"
                   alt="img"
                 />
               </Grid2>
@@ -104,7 +104,7 @@ export default function AllLesson() {
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/2.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/2.jpg"
                 alt="img"
               />
             </Grid2>
@@ -113,7 +113,7 @@ export default function AllLesson() {
             ) : (
               <Grid2 size={{ md: 6, xs: 12 }}>
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/456949170_2290429257961210_1929929787179117232_n.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/456949170_2290429257961210_1929929787179117232_n.jpg"
                   alt="img"
                 />
               </Grid2>
@@ -138,7 +138,7 @@ export default function AllLesson() {
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471132921_122145107948351735_3348126933673112272_n.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/471132921_122145107948351735_3348126933673112272_n.jpg"
                 alt="img"
               />
             </Grid2>

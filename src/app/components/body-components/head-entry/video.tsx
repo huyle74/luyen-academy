@@ -38,7 +38,7 @@ export default function TiktokVideo() {
         />
       </Box>
       <video
-        src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/class-clip.mp4"
+        src="https://storage.googleapis.com/luyen-wedding-academy-bucket/class-clip.mp4"
         autoPlay
         loop
         muted

@@ -57,14 +57,14 @@ export default function AllLesson() {
             ) : (
               <Grid2 size={{ md: 6, xs: 12 }}>
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/nang-cao-course/2.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/nang-cao-course/2.jpg"
                   alt="img"
                 />
               </Grid2>
             )}
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/nang-cao-course/1.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/nang-cao-course/1.jpg"
                 alt="img"
               />
             </Grid2>
@@ -180,7 +180,7 @@ export default function AllLesson() {
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <img
-                src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/nang-cao-course/3.jpg"
+                src="https://storage.googleapis.com/luyen-wedding-academy-bucket/nang-cao-course/3.jpg"
                 alt="img"
               />
             </Grid2>
@@ -189,7 +189,7 @@ export default function AllLesson() {
             ) : (
               <Grid2 size={{ md: 6, xs: 12 }}>
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/nang-cao-course/4.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/nang-cao-course/4.jpg"
                   alt="img"
                 />
               </Grid2>

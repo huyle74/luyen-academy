@@ -30,7 +30,7 @@ export default function Testimonial() {
             <Grid2 size={{ md: 4, xs: 6 }} className="testimonial-container">
               <div className="testimonial-image-container">
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/464213425_122135750666351735_5787463853231942787_n.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/464213425_122135750666351735_5787463853231942787_n.jpg"
                   alt="image"
                 />
               </div>
@@ -68,7 +68,7 @@ export default function Testimonial() {
               </Box>
               <div className="testimonial-image-container">
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/464242671_122135901572351735_4109879563579865501_n.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/464242671_122135901572351735_4109879563579865501_n.jpg"
                   alt="image"
                 />
               </div>
@@ -76,7 +76,7 @@ export default function Testimonial() {
             <Grid2 size={{ md: 4, xs: 12 }} className="testimonial-container">
               <div className="testimonial-image-container">
                 <img
-                  src="https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/464381132_122135901500351735_1311977758340540686_n.jpg"
+                  src="https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/464381132_122135901500351735_1311977758340540686_n.jpg"
                   alt="image"
                 />
               </div>

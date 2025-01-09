@@ -16,7 +16,7 @@ export default function EntryBody() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundImage:
-          "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464316107_122135743598351735_5721276897516419846_n.jpg')",
+          "url('https://storage.googleapis.com/luyen-wedding-academy-bucket/luyen-academy-pics/product-collection/464316107_122135743598351735_5721276897516419846_n.jpg')",
       }}
       className="entry-body"
       id="entry-body"

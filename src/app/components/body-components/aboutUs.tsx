@@ -21,7 +21,7 @@ export default function AboutPage() {
           sx={{
             position: "relative",
             backgroundImage:
-              "url('https://storage.cloud.google.com/luyen-wedding-academy-bucket/about-background.jpg')",
+              "url('https://storage.googleapis.com/luyen-wedding-academy-bucket/about-background.jpg')",
             backgroundSize: "cover",
             backgroundPosition: `center`,
           }}
