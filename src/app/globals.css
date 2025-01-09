@@ -363,6 +363,11 @@ a {
 }
 
 /* BASIC COURSE */
+#class-gallery-container h1 {
+  background-color: #f01267;
+  width: max-content;
+}
+
 .slideshow-image {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -444,6 +449,9 @@ a {
 }
 
 /* BASIC COURSE CONTENT */
+.basic-lesson-container {
+  margin-top: 5vh;
+}
 .basic-lesson-container img {
   object-fit: cover;
   height: 100%;

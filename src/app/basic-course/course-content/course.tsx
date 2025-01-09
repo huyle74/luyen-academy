@@ -19,7 +19,7 @@ export default function AllLesson() {
       ></Box>
       <Box sx={{ backgroundColor: "white", pb: 10 }}>
         <h1 style={{ marginLeft: `${matches ? "10vw" : "25vw"}` }}>
-          KHÓA HỌC CƠ BẢN
+          Khóa Thiết Kế Rập và May Cơ Bản Váy Cưới, Dạ Hội, Áo Dài.
         </h1>
         <Box
           sx={{ width: `${matches ? "100%" : "50%"}`, m: "auto" }}
