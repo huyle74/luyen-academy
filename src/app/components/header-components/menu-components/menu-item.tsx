@@ -1,46 +1,32 @@
-import { useRef } from "react";
-import { Box, useMediaQuery } from "@mui/material";
-import gsap from "gsap";
-
-import ScrollToPlugin from "gsap/ScrollToPlugin";
-gsap.registerPlugin(ScrollToPlugin);
+import { useMediaQuery } from "@mui/material";
 
 type childProps = {
-  id: string;
   children: React.ReactNode;
+  onClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+  [key: string]: any;
 };
 
-export default function MenuItem({ children, id }: childProps) {
-  const itemRef = useRef<HTMLDivElement>(null);
+export default function MenuItem({
+  children,
+  onClick,
+  id,
+  ...rest
+}: childProps) {
   const matches = useMediaQuery("(max-width:758px)");
-
-  const handleClick = () => {
-    gsap.to("html", {
-      duration: 2,
-      scrollTo: `#${id}`,
-      ease: "power1",
-    });
-    if (matches) {
-      gsap.to("#menu", {
-        height: 0,
-        duration: 0.6,
-        ease: "power1",
-      });
-    }
-  };
 
   return (
     <a
-      onClick={handleClick}
+      {...rest}
+      onClick={(event) => {
+        onClick(event);
+      }}
       className="menu-item"
       href="#"
       style={{
         fontSize: `${matches ? "1.3rem" : "1.5rem"}`,
       }}
     >
-      <p id="menu-item-text" ref={itemRef}>
-        {children}
-      </p>
+      <p id="menu-item-text">{children}</p>
     </a>
   );
 }

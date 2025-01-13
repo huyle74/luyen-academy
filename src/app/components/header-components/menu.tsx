@@ -8,7 +8,11 @@ import MenuItem from "./menu-components/menu-item";
 import Courses from "./menu-components/menu-course";
 import gsap from "gsap";
 
-export default function Menu() {
+type ChildProps = {
+  onClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+};
+
+const Menu: React.FC<ChildProps> = ({ onClick }) => {
   const matches = useMediaQuery("(max-width:758px)");
   const [dropDown, setDropDown] = useState<boolean>(false);
 
@@ -122,11 +126,18 @@ export default function Menu() {
         >
           KHÓA HỌC
         </Button>
-        <MenuItem id={"products"}>SẢN PHẨM</MenuItem>
-        <MenuItem id={"about"}>VỀ CHÚNG TÔI</MenuItem>
-        <MenuItem id={"contact"}>LIÊN HỆ</MenuItem>
+        <MenuItem onClick={onClick} data-id="products">
+          SẢN PHẨM
+        </MenuItem>
+        <MenuItem onClick={onClick} data-id="about">
+          VỀ CHÚNG TÔI
+        </MenuItem>
+        <MenuItem onClick={onClick} data-id="contact">
+          LIÊN HỆ
+        </MenuItem>
       </Box>
       <Courses onClick={handleClick} />
     </Box>
   );
-}
+};
+export default Menu;
